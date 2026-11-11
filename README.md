@@ -41,26 +41,23 @@ The first Rosetta launch is much slower than the rest: macOS translates AE and e
 
 ## Getting started
 
-You need an Apple Silicon Mac, After Effects 2022 (22.6) in `/Applications/Adobe After Effects 2022`, and Rosetta 2:
-
-```bash
-softwareupdate --install-rosetta --agree-to-license
-```
-
-Clone the repo and see where your Mac stands. Both commands only read:
+You need an Apple Silicon Mac with After Effects 2022 installed. Clone the repo and run the preflight:
 
 ```bash
 git clone https://github.com/tbhtho/AE2022-Apple-Silicon.git
 cd AE2022-Apple-Silicon/scripts
-./doctor.sh          # macOS, Rosetta, AE version, current mode, caches, warnings
-./plugin-arch.sh     # which installed plugins need Rosetta
+./preflight.command
 ```
+
+The preflight finds your After Effects, checks your macOS version, and lists what it would change before asking. It can install Rosetta 2 if it is missing, hide the two startup warnings, and clear the plugin cache so the next launch rescans everything. `--check` only reports.
 
 Then launch in the mode you need. The `.command` files can also be double-clicked in Finder.
 
 ```bash
 ./launch-rosetta.command "/path/to/project.aep"
 ```
+
+To see which of your plugins need Rosetta, run `./plugin-arch.sh`.
 
 > [!NOTE]
 > If AE is installed somewhere else, set `AE_APP` to the full path of the `.app` before running a script.
@@ -69,6 +66,7 @@ Then launch in the mode you need. The `.command` files can also be double-clicke
 
 | Script | What it does |
 |---|---|
+| [`preflight.command`](scripts/preflight.command) | Find AE, check your Mac, apply the settings Rosetta needs |
 | [`launch-rosetta.command`](scripts/launch-rosetta.command) | Start AE under Rosetta, with every plugin |
 | [`launch-native.command`](scripts/launch-native.command) | Start AE natively, fast |
 | [`restart-clean.command`](scripts/restart-clean.command) | Restart AE with the plugin cache cleared |
@@ -78,7 +76,7 @@ Then launch in the mode you need. The `.command` files can also be double-clicke
 | [`cep-doctor.sh`](scripts/cep-doctor.sh) | Fix an extension panel that will not open |
 | [`bcc-host-check.sh`](scripts/bcc-host-check.sh) | Check whether your Continuum version supports your AE |
 
-Only `restart-clean`, `ae-warnings` and `cep-doctor fix` change anything. Each script explains itself in its first lines.
+Only `preflight`, `restart-clean`, `ae-warnings` and `cep-doctor fix` change anything. Each script explains itself in its first lines.
 
 ## Tested plugins
 
