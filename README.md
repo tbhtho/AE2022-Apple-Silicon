@@ -19,6 +19,8 @@ Launchers, checks and plain-language notes on Rosetta, plugin caches and the err
 
 After Effects 2022 is the last version a lot of older plugin suites were built for, and most of those suites are Intel-only. AE 2022 itself runs natively on Apple Silicon, but a plugin is loaded into AE's own process, so a native AE cannot load an Intel plugin. On an M-series Mac that shows up as plugins missing from the Effects menu, an "incompatible plugins" warning at startup, effects that fail with `(25 :: 3)`, and panels that are listed but never open.
 
+Upgrading After Effects does not fix this, it removes the way out. Running AE under Rosetta is what lets Intel plugins load, and [Adobe dropped Rosetta support in version 24.0](https://helpx.adobe.com/after-effects/kb/after-effects-apple-silicon.html). AE 2022 and 2023 are the last versions that can still load them on an M-series Mac.
+
 Nearly all of it comes down to three things: which mode AE was started in, what AE has cached about your plugins, and which versions of a suite are installed side by side. This repo has a script for each.
 
 ## Native or Rosetta
@@ -103,6 +105,10 @@ You need your own licence for After Effects and each plugin. Nothing here instal
 | Two Continuum versions are installed and share one engine | Keep only one. Uninstall the other, then run `restart-clean.command` |
 
 `bcc-host-check.sh` tells you which one you have.
+
+## Related
+
+[AE Timeline Zoom](https://github.com/tbhtho/zoom) is a small menu-bar app that adds scroll-wheel zoom to the AE 2022 timeline: hold Command and scroll to zoom around the pointer.
 
 ## Licence
 
