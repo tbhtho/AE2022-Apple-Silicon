@@ -75,7 +75,7 @@ Then launch in the mode you need. The `.command` files can also be double-clicke
 | [`plugin-arch.sh`](scripts/plugin-arch.sh) | Show which plugins need Rosetta |
 | [`ae-warnings.py`](scripts/ae-warnings.py) | Hide the Rosetta and incompatible-plugins startup warnings |
 | [`cep-doctor.sh`](scripts/cep-doctor.sh) | Fix an extension panel that will not open |
-| [`bcc-host-check.sh`](scripts/bcc-host-check.sh) | Explain a Continuum `(25 :: 3)` error |
+| [`bcc-host-check.sh`](scripts/bcc-host-check.sh) | Check whether your Continuum version supports your AE |
 
 Only `restart-clean`, `ae-warnings` and `cep-doctor fix` change anything. Each script explains itself in its first lines.
 
