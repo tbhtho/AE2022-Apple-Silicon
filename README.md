@@ -24,6 +24,9 @@ Upgrading After Effects does not fix this, it removes the way out. Running AE un
 
 Nearly all of it comes down to three things: which mode AE was started in, what AE has cached about your plugins, and which versions of a suite are installed side by side. This repo has a script for each.
 
+> [!NOTE]
+> If every plugin you use is a current Apple Silicon build, you do not need any of this. Run AE natively and carry on.
+
 ## Native or Rosetta
 
 AE 2022 can start in two modes. Pick per session.
@@ -34,6 +37,8 @@ AE 2022 can start in two modes. Pick per session.
 | **Loads** | Universal plugins only | Universal and Intel-only plugins |
 | **Use it for** | Projects that only use built-in or universal effects | Anything using older suites |
 | **Start it with** | `scripts/launch-native.command` | `scripts/launch-rosetta.command` |
+
+No scripts needed if you always want Rosetta: select the app in Finder, choose File > Get Info, and tick **Open using Rosetta**. The launchers are for switching between the two without going back to that checkbox.
 
 A project saved in one mode opens in the other. Effects from plugins that did not load show as missing until you reopen under Rosetta.
 
