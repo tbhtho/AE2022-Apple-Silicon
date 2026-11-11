@@ -106,6 +106,13 @@ You need your own licence for After Effects and each plugin. Nothing here instal
 
 `bcc-host-check.sh` tells you which one you have.
 
+## When Rosetta goes away
+
+Everything here depends on Rosetta 2. Apple has said Rosetta stays fully available through macOS 27, and that Intel-only apps stop launching on Apple Silicon with macOS 28.
+
+> [!IMPORTANT]
+> Once that happens and Apple removes Rosetta's backwards compatibility, I will likely build my own replacement so After Effects 2022 and its Intel plugins can keep running. That is a plan, not a promise or a date. Until then, stay on macOS 27 or earlier on any Mac you need these plugins on.
+
 ## Related
 
 [AE Timeline Zoom](https://github.com/tbhtho/zoom) is a small menu-bar app that adds scroll-wheel zoom to the AE 2022 timeline: hold Command and scroll to zoom around the pointer.
