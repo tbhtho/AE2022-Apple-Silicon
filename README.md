@@ -93,6 +93,17 @@ On a MacBook Pro M3, macOS 15.5, After Effects 22.6.
 
 You need your own licence for After Effects and each plugin. Nothing here installs or unlocks software.
 
+## Continuum and the (25 :: 3) error
+
+"This effect cannot be applied because it cannot be initialized (25 :: 3)" means AE found the plugin and the plugin refused to start. With Boris FX Continuum it is one of two things:
+
+| Cause | Fix |
+|---|---|
+| Your Continuum is too new. 2025 and 2026 need AE 2023 or later | Use Continuum 12.5, or 2024 (v17), the last release that lists AE 2022 |
+| Two Continuum versions are installed and share one engine | Keep only one. Uninstall the other, then run `restart-clean.command` |
+
+`bcc-host-check.sh` tells you which one you have.
+
 ## Licence
 
 GPL-3.0-or-later, see [LICENSE](LICENSE). Copyright (C) 2026 tbhtho. Not affiliated with or endorsed by Adobe, Apple or any plugin vendor named here.
