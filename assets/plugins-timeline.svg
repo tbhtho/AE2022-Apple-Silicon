@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" width="960" height="350" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t">Plugins loaded in After Effects 22.6 on Apple Silicon</title>
+  <desc id="d">Drawn as an After Effects timeline. BCC Continuum 12.5 loads 302 plugins, Sapphire 290, Red Giant Universe 3.3.3 loads 90, Omino 8 and Twixtor 8 loads 4. Continuum 2026 and Trapcode 2026.3 are blocked.</desc>
+
+  <defs>
+    <clipPath id="frame"><rect width="960" height="350" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- panel -->
+    <rect width="960" height="350" fill="#1f1f1f"/>
+    <rect width="960" height="40" fill="#2b2b2b"/>
+    <rect y="40" width="960" height="30" fill="#252525"/>
+
+    <!-- tab bar -->
+    <rect x="20" y="0" width="108" height="2" fill="#2d8ceb"/>
+    <text x="20" y="26" font-size="14" font-weight="600" fill="#e6e6e6">Plugins loaded</text>
+    <text x="940" y="26" font-size="13" fill="#8c8c8c" text-anchor="end">After Effects 22.6, macOS 15.5, M3</text>
+
+    <!-- column heads -->
+    <g font-size="12" fill="#8c8c8c">
+      <text x="24" y="60">#</text>
+      <text x="70" y="60">Suite</text>
+      <text x="285" y="60">Mode</text>
+      <text x="380" y="60" text-anchor="middle">0</text>
+      <text x="550" y="60" text-anchor="middle">100</text>
+      <text x="720" y="60" text-anchor="middle">200</text>
+      <text x="890" y="60" text-anchor="middle">300</text>
+    </g>
+
+    <!-- ruler ticks and grid -->
+    <g stroke="#555" stroke-width="1">
+      <path d="M465.5 64v6M635.5 64v6M805.5 64v6"/>
+    </g>
+    <g stroke="#2e2e2e" stroke-width="1">
+      <path d="M380.5 70v280M550.5 70v280M720.5 70v280M890.5 70v280"/>
+      <path d="M0 70.5h960M0 110.5h960M0 150.5h960M0 190.5h960M0 230.5h960M0 270.5h960M0 310.5h960"/>
+    </g>
+    <path d="M360.5 40v310" stroke="#141414" stroke-width="1"/>
+
+    <!-- layers: working -->
+    <g font-size="14" fill="#dcdcdc">
+      <text x="24" y="95" fill="#8c8c8c">1</text>
+      <rect x="44" y="84" width="12" height="12" rx="2" fill="#a9a9ca"/>
+      <text x="70" y="95">BCC Continuum 12.5</text>
+      <text x="285" y="95" fill="#a8a8a8">Rosetta</text>
+      <rect x="380" y="80" width="513" height="20" rx="3" fill="#a9a9ca"/>
+      <text x="903" y="95">302</text>
+
+      <text x="24" y="135" fill="#8c8c8c">2</text>
+      <rect x="44" y="124" width="12" height="12" rx="2" fill="#a9cbc7"/>
+      <text x="70" y="135">Sapphire</text>
+      <text x="285" y="135" fill="#a8a8a8">Mixed</text>
+      <rect x="380" y="120" width="493" height="20" rx="3" fill="#a9cbc7"/>
+      <text x="883" y="135">290</text>
+
+      <text x="24" y="175" fill="#8c8c8c">3</text>
+      <rect x="44" y="164" width="12" height="12" rx="2" fill="#e7c19e"/>
+      <text x="70" y="175">Red Giant Universe 3.3.3</text>
+      <text x="285" y="175" fill="#a8a8a8">Rosetta</text>
+      <rect x="380" y="160" width="153" height="20" rx="3" fill="#e7c19e"/>
+      <text x="543" y="175">90</text>
+
+      <text x="24" y="215" fill="#8c8c8c">4</text>
+      <rect x="44" y="204" width="12" height="12" rx="2" fill="#b3c7b3"/>
+      <text x="70" y="215">Omino</text>
+      <text x="285" y="215" fill="#a8a8a8">Rosetta</text>
+      <rect x="380" y="200" width="14" height="20" rx="3" fill="#b3c7b3"/>
+      <text x="404" y="215">8</text>
+
+      <text x="24" y="255" fill="#8c8c8c">5</text>
+      <rect x="44" y="244" width="12" height="12" rx="2" fill="#e5bcc9"/>
+      <text x="70" y="255">Twixtor 8</text>
+      <text x="285" y="255" fill="#a8a8a8">Rosetta</text>
+      <rect x="380" y="240" width="7" height="20" rx="2" fill="#e5bcc9"/>
+      <text x="397" y="255">4</text>
+    </g>
+
+    <!-- layers: blocked -->
+    <g font-size="14" fill="#7d7d7d">
+      <text x="24" y="295">6</text>
+      <rect x="44.5" y="284.5" width="11" height="11" rx="2" fill="none" stroke="#6a6a6a"/>
+      <text x="70" y="295">Continuum 2026</text>
+      <text x="285" y="295">Blocked</text>
+      <text x="392" y="295" font-size="13">Does not load in 22.6</text>
+
+      <text x="24" y="335">7</text>
+      <rect x="44.5" y="324.5" width="11" height="11" rx="2" fill="none" stroke="#6a6a6a"/>
+      <text x="70" y="335">Trapcode 2026.3</text>
+      <text x="285" y="335">Blocked</text>
+      <text x="392" y="335" font-size="13">Needs a Maxon One account</text>
+    </g>
+
+    <rect x=".5" y=".5" width="959" height="349" rx="10" fill="none" stroke="#3a3a3a"/>
+  </g>
+</svg>
