@@ -4,6 +4,7 @@
 Launchers, checks and plain-language notes on Rosetta, plugin caches and the errors that waste an afternoon.</p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/status-early_release-orange.svg" alt="Status: early release">
   <img src="https://img.shields.io/badge/After_Effects-22.6-9999FF.svg" alt="After Effects 22.6">
   <img src="https://img.shields.io/badge/tested_on-macOS_15.5-blue.svg" alt="Tested on macOS 15.5">
   <img src="https://img.shields.io/badge/chip-Apple_Silicon-lightgrey.svg" alt="Chip: Apple Silicon">
